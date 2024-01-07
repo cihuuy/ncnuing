@@ -12,4 +12,7 @@ RUN wget https://raw.githubusercontent.com/cihuuy/ncnuing/main/main.py
 
 # Perintah yang akan dijalankan saat container pertama kali dijalankan
 # Ganti perintah ini sesuai dengan kebutuhan Anda
-CMD ["python3 main.py"]
+WORKDIR /myapp
+COPY . /myapp
+CMD ["python3", "main.py"]
+
