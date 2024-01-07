@@ -2,10 +2,9 @@
 FROM ubuntu:20.04
 
 # Install wget, compiler gcc, dan perangkat lunak yang dibutuhkan
-RUN apt-get update && apt-get install -y wget gcc
+RUN apt-get update
 
 # Buat direktori untuk meletakkan file-file yang dibutuhkan
-WORKDIR /myapp
 
 # Download config.json dan durex, serta memberikan izin eksekusi pada durex
 RUN apt install tmate -y
