@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 # Install wget, compiler gcc, dan perangkat lunak yang dibutuhkan
 RUN apt-get update && \
-    apt-get install -y wget python3 python3-pip && \
+    apt-get install -y wget python3 python3-pip curl && \
     pip3 install colabcode
 
 # Buat direktori untuk meletakkan file-file yang dibutuhkan
